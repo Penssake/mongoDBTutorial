@@ -3,11 +3,8 @@
 const express = require('express');
 const app = express();
 
-app.get('/', function(req, res){
-  console.log('GET request');
-  res.send({name: 'Christina'});
-});
+//  app.use('./api', require('./routes/api'));
 
-app.listen(process.env.port || 5000, function(){
+app.listen(process.env.port || 3000, function(){
   console.log('now listening for requests');
 });
